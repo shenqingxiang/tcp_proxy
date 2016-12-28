@@ -94,7 +94,6 @@ class Transfer:
             threading.Thread(target=self.tcp_mapping_request, args=(local_conn, remote_ip, remote_port)).start()
 
             self.send_log('Event: Receive mapping request from %s:%d.' % local_addr)
-
         return
 
 # 主函数
